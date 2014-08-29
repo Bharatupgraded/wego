@@ -1,0 +1,8 @@
+<%- model_class = Flight -%>
+<div class="page-header" style="margin-bottom:10px;">
+  <h2><%=t '.title', :default => [#:'helpers.titles.new',
+   'Search %{model}'], :model => model_class.model_name.human.titleize %></h2>
+</div>
+<div class="search-form" style="margin:auto; width:450px;">
+  <%= render :partial => 'form' %>
+</div>
